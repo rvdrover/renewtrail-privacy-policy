@@ -57,9 +57,9 @@
 <body>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: September 20, 2026</p>
+    <p class="muted">Last updated: September 25, 2026</p>
 
-    <p><strong>RenewTrail</strong> ("we", "our", or "the App") helps you keep track of renewals and expiry dates, and the documents that go with them. This Privacy Policy explains what information the App handles when you use it on Android and iOS. RenewTrail works without an account.</p>
+    <p><strong>RenewTrail</strong> ("we", "our", or "the App") helps you keep track of renewals and expiry dates, and the documents that go with them. This Privacy Policy explains what information the App handles when you use it on Android and iOS. RenewTrail works without an account. Signing in with Google is optional and is only used for cloud backup.</p>
 
     <h2>Developer Information</h2>
     <p>Developer: Vertex Studio</p>
@@ -70,15 +70,35 @@
     <ul>
       <li><strong>Items and renewals:</strong> names, categories, expiry and renewal dates, providers, identifiers or reference numbers, amounts, notes and reminder settings.</li>
       <li><strong>Documents:</strong> photos, scans and files you attach to a renewal.</li>
-      <li><strong>Preferences:</strong> theme, currency, reminder time and, if you choose to give one, the name used in the greeting.</li>
+      <li><strong>Preferences:</strong> theme, currency, reminder time, your monthly budget (if you set one) and, if you choose to give one, the name used in the greeting.</li>
     </ul>
-    <p>RenewTrail does not upload your items or documents anywhere, and never uses them to target ads.</p>
+    <p>Unless you turn on cloud backup (see below), RenewTrail does not upload your items or documents anywhere, and never uses them to target ads.</p>
+
+    <h2>Home-Screen Widget</h2>
+    <p>The optional Android home-screen widget shows the titles and expiry dates of your next few renewals. This is prepared on your device and shown by your launcher. It is not sent anywhere. Anyone who can see your home screen can see it, so remove the widget if you do not want that.</p>
+
+    <h2 id="cloud-backup">Cloud Backup to Google Drive (Pro, optional)</h2>
+    <p>RenewTrail Pro includes an optional cloud backup. It is off until you sign in with Google and turn it on.</p>
+    <ul>
+      <li><strong>What is uploaded:</strong> the same JSON backup you can export yourself: your items, renewals, amounts, notes and reminder settings. Attached documents, photos and files are <strong>not</strong> uploaded.</li>
+      <li><strong>Where it goes:</strong> a single file in the hidden <em>app data folder</em> of your own Google Drive. Only RenewTrail can access that folder, it does not appear in your Drive, and RenewTrail cannot see any of your other Drive files. The request uses the <code>drive.appdata</code> permission and nothing wider.</li>
+      <li><strong>What we receive:</strong> nothing. The backup travels directly between your device and Google, encrypted in transit. We do not run a server for it, we never receive a copy and we cannot read it. Your Google account name and email address are read on your device only to show which account is signed in, and are not sent to us.</li>
+      <li><strong>Google's handling:</strong> once the file is in your Google Drive it is stored under your Google account and Google's terms and privacy policy.</li>
+      <li><strong>Automatic backup:</strong> if you turn it on, the App uploads a new backup when you open it and your data has changed.</li>
+      <li><strong>Restoring:</strong> restoring from the backup adds items that are not already on the device. It does not remove or overwrite existing items.</li>
+      <li><strong>Stopping and deleting:</strong> sign out in <strong>Settings &gt; Cloud backup</strong>. To delete the backup file and revoke access, open your Google Account &gt; Security &gt; <em>Third-party apps and services</em> (or "Your connections to third-party apps and services"), choose RenewTrail and delete its hidden app data, then remove access.</li>
+    </ul>
+    <p>RenewTrail's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#limited-use">Google API Services User Data Policy</a>, including its Limited Use requirements. The App uses Google user data only to provide the backup and restore feature you asked for. It does not transfer it to others, use it for advertising, and no person reads it.</p>
+
+    <h2>Quick Add and Sharing Into RenewTrail</h2>
+    <p>Quick-add templates are built into the App. If you use "Share" in another app to send text to RenewTrail (Pro), the text is used on your device to pre-fill a new item and is not sent anywhere.</p>
 
     <h2>Information Collected by Third-Party Services</h2>
-    <p>The App uses two Google services. They may collect limited technical information, and they act under their own privacy policies:</p>
+    <p>The App uses these Google services. They may collect limited technical information, and they act under their own privacy policies:</p>
     <ul>
       <li><strong>Google AdMob (free version only):</strong> shows advertisements. AdMob may collect device identifiers (including the advertising ID), approximate location derived from your IP address, ad interactions and diagnostics. All ad requests from RenewTrail are <strong>non-personalized</strong>. Where the law requires it (for example in the EEA and UK), a consent form is shown first. If you buy RenewTrail Pro, the ads service is not started.</li>
       <li><strong>Firebase Analytics and Crashlytics:</strong> help us understand which features are used and fix crashes. They receive anonymous events (such as "an item was added"), crash reports (the type of error and where it happened), device model, operating system version and an installation identifier. They never receive the names, dates, amounts, notes or documents you store. Sharing is controlled by the <strong>Share anonymous usage and crash reports</strong> switch in Settings &gt; Privacy, and stops as soon as you turn it off. Test builds never send them.</li>
+      <li><strong>Google Sign-In and Google Drive (only if you use cloud backup):</strong> described in the Cloud Backup section above.</li>
     </ul>
     <p>More about how Google handles this information:
       <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and
@@ -90,32 +110,35 @@
       <li><strong>Camera:</strong> only when you choose to photograph a document.</li>
       <li><strong>Photos and files:</strong> only the files you pick with the system picker are copied into the App.</li>
       <li><strong>Biometrics / device lock:</strong> only if you turn on App lock. Verification is done by your device; RenewTrail never receives your fingerprint, face data or PIN.</li>
-      <li><strong>Internet:</strong> for ads, analytics, crash reports and the store. The App works offline otherwise.</li>
+      <li><strong>Internet:</strong> for ads, analytics, crash reports, the store and cloud backup. The App works offline otherwise.</li>
+      <li><strong>Google account:</strong> only if you choose to sign in for cloud backup. You pick the account in Google's own sign-in screen and can revoke access at any time.</li>
     </ul>
 
     <h2>Purchases</h2>
-    <p>RenewTrail Pro is a one-time purchase handled by Google Play or the Apple App Store. We do not receive or store your payment details. The App keeps only a flag on your device saying whether Pro is unlocked.</p>
+    <p>RenewTrail Pro is a one-time purchase handled by Google Play or the Apple App Store. We do not receive or store your payment details. The App keeps only a flag on your device saying whether Pro is unlocked. Pro removes ads and adds quick add from templates and shared text, and cloud backup to Google Drive.</p>
 
     <h2>Exports and Sharing</h2>
-    <p>You can export your data (JSON backup, CSV) or create a PDF report for an item. These files are created on your device when you ask, and you choose where they go. Once you share a file with another app or person, it is outside our control.</p>
+    <p>You can export your data (JSON backup, CSV) or create a PDF report for an item. These files are created on your device when you ask, and you choose where they go. (Cloud backup is separate and described above.) Once you share a file with another app or person, it is outside our control.</p>
 
     <h2>Data Sharing</h2>
-    <p>We do not sell your information. The only data that leaves your device is the technical information described above, sent to Google AdMob (ads) and Firebase (analytics and crash reports).</p>
+    <p>We do not sell your information. The only data that leaves your device is the technical information described above, sent to Google AdMob (ads) and Firebase (analytics and crash reports), and, only if you turn on cloud backup, your backup file sent to your own Google Drive.</p>
 
     <h2>Security</h2>
-    <p>Your items and documents are kept in the App's private storage on your device. Network traffic to Google services is encrypted in transit. You can add App lock (biometrics or device PIN) to protect the App itself. Please keep your device secured, and keep your own backups: if you uninstall the App or lose the device without an exported backup, your data cannot be recovered.</p>
+    <p>Your items and documents are kept in the App's private storage on your device. Network traffic to Google services, including cloud backup, is encrypted in transit. You can add App lock (biometrics or device PIN) to protect the App itself. Please keep your device secured, and keep your own backups (cloud backup does not include attached documents): if you uninstall the App or lose the device without an exported backup, your data cannot be recovered.</p>
 
     <h2 id="delete-data">Deleting Your Data</h2>
     <p>Because your items and documents exist only on your device, you are in control of them:</p>
     <ul>
       <li>In the App, open <strong>Settings &gt; Privacy &gt; Delete all data</strong> to remove all items, renewals, reminders, documents and settings, and cancel scheduled reminders.</li>
       <li>Uninstalling the App also removes its data from your device.</li>
+      <li>If you used cloud backup, <strong>Delete all data</strong> does not remove the file already in your Google Drive. Delete it from your Google Account as described in the Cloud Backup section above.</li>
     </ul>
-    <p>We do not hold an account or a copy of your data, so there is nothing to delete on our side. Anonymous analytics and crash data cannot be linked to you by us, and Firebase Analytics keeps it for 2 months. Turning off <strong>Share anonymous usage and crash reports</strong> stops further collection, and you can reset or delete your advertising ID in your device settings.</p>
+    <p>We do not hold an account or a copy of your data (including cloud backups, which sit in your own Google Drive), so there is nothing to delete on our side. Anonymous analytics and crash data cannot be linked to you by us, and Firebase Analytics keeps it for 2 months. Turning off <strong>Share anonymous usage and crash reports</strong> stops further collection, and you can reset or delete your advertising ID in your device settings.</p>
 
     <h2>Your Choices</h2>
     <ul>
       <li>Turn analytics and crash reports off in Settings &gt; Privacy.</li>
+      <li>Turn cloud backup off, or sign out, in Settings &gt; Cloud backup, and revoke access in your Google Account.</li>
       <li>Change permissions at any time in your device settings.</li>
       <li>Reset your advertising ID or opt out of ads personalization in your device settings.</li>
       <li>Buy RenewTrail Pro to remove all ads.</li>
